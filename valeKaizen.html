@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamentos</title>
+    <script type='text/javascript' src="js/equipamento.js"></script>
+    <link rel="stylesheet" href="css/telas.css">
+    <link rel="shortcut icon" type="imagex/png" href="./icon/manutencao.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    <title>Login</title>   
+</head>
+<body page='lista'>
+
+
+    <main id="conteudo">
+    
+        <div id='listaRegistros'>
+
+            <div>
+                <input style='flex:1' placeholder="PESQUISAR" autofocus id='inputPesquisa' />
+            </div>
+            <br>
+
+            <div style="overflow-x:auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID:</th>
+                            <th>Matricula:</th>
+                            <th>Nome:</th>
+                            <th>Data do Aso:</th>  
+                            <th>Exame Médico Data:</th>
+                            <th>Exame Complementar Data:</th>                                    
+                        </tr>
+                    </thead>
+                    <tbody id='listaRegistrosBody'></tbody>
+                </table>
+            </div>
+            <div>
+                <button onclick="visualizar('cadastro', true)">Cadastra Funcionario</button>
+            </div>
+
+        </div>
+
+        <form id='cadastroRegistro'>
+
+            <div class='label'>
+                <div>ID</div>
+                <div>
+                    <input type='number' readonly id='id' />
+                </div>
+            </div>
+
+            
+            <div class='label'>
+                <div>Matricula:</div>
+                <div>
+                    <input type='number' id='tag' />
+                </div>
+            </div>
+
+            <div class='label'>
+                <div>Nome do Funcionario:</Noframes></div>
+                <div>
+                    <input type='text' id='modelo' />
+                </div>
+            </div>
+
+            <div class='label'>
+                <div>Data do Aso:</div>
+                <div>
+                    <input type='date' id='marca' />
+                </div>
+            </div>
+
+            <div class='label'>
+                <div>Exame Médico Data</div>
+                <div>
+                    <input type='date' id='descricao' />
+                </div>
+            </div>
+
+            <div class='label'>
+                <div>Exame Complementar Data:</div>
+                <div>
+                    <input type='date' id='grupoequipamento' />
+                </div>        
+            <div>
+                <button>
+                    <i class="fa fa-save"></i>  Salvar
+                </button>
+                <button onclick="visualizar('lista')" class="vermelho" type='button'>
+                    <i class="fa fa-arrow-alt-circle-left"></i>  Voltar
+                </button>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>

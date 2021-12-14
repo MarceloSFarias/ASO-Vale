@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="css/telas.css">
+<style>
+    p:hover {
+    color: rgb(251, 227, 7);
+}
+</style> 
+
+
+    
+</head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (e) {
+        $("#divConteudo").hide();
+
+        $("#btnMostrarEsconder").click(function (e) {
+            $("#divConteudo").toggle();
+        });
+    });
+</script>
+<body page = "menu">
+    <a class="link_page" href="http://www.vale.com/brasil/PT/aboutvale/news/Paginas/isolamento.aspx" target="_blank">
+        <p>Dicas para manter a saúde emocional</p>
+    </a>
+    <a class="link_page" href="http://www.vale.com/brasil/PT/people/coronavirus/Paginas/default.aspx" target="_blank">
+        <p>Coronavírus (COVID-19)</p>
+    </a>
+    <a class="link_page" href="http://www.vale.com/brasil/PT/aboutvale/news/Paginas/vale-premiada-congresso-mundial-saude-seguranca.aspx" target="_blank">
+        <p>Saúde e Segurança</p>
+    </a>
+    <a class="link_page" href="http://www.vale.com/brasil/PT/aboutvale/news/Paginas/iniciativas-de-saude.aspx" target="_blank">
+        <p>Iniciativas de saúde</p>
+    </a>
+    <a class="link_page" href="http://www.vale.com/brasil/PT/Paginas/plano-saude-ams.aspx" target="_blank">
+        <p>Plano de Saúde</p>
+    </a>
+    
+    <form id='menuLogin'>
+
+        <div class='label'>
+            <p>Restrito</p>
+        </div>
+
+        <div class='label'>
+            <p>Matricula:</p>
+            <div>
+                <input type='text'  id='id' />
+            </div>
+        </div>
+
+        <div class='label'>
+            <p>Senha:</p>
+            <div>
+                <input type='text' id='tag' />
+            </div>
+        </div>
+
+        <div id="divConteudo">
+            Conteudo
+        
+        </div>
+        
+        
+
+    </form>
+    <button id="btnMostrarEsconder" class="button2">Acessar</button>
+</body>
+</html>
